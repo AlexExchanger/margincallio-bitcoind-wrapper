@@ -19,7 +19,7 @@ class Service {
             return false;
         }
 
-        if ($_POST['sign'] != md5($_POST['request'] . $_POST['time'] . $requestSalt)) {
+        if ($_POST['sign'] != md5($_POST['request']['action'].$_POST['time'].$requestSalt)) {
             self::log('warn', 'Request with wrong sign', $_POST);
             return false;
         }

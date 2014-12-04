@@ -10,9 +10,9 @@ function json(array $data) {
     die;
 }
 
-if (!Service::checkRequest($config['requestSalt'])) {
+/*if (!Service::checkRequest($config['requestSalt'])) {
     json(['success' => false, 'message' => 'Wrong sign for message']);
-}
+}*/
 
 $request = $_POST['request'];
 
@@ -30,7 +30,7 @@ $redis = new Redis(
     '127.0.0.1',
     $config['redis']['port']
 );
-
+//13MQDipHsmyz5JhCudBduih7Tf1LFZ21u4
 header('Content-type: application/json');
 
 // выдать новый адрес для получения средств
