@@ -16,6 +16,8 @@ return [
         // Адрес, по которому уведомляется о поступлении средств
         'received' => 'http://api.testdomain.com/service/bitcoin/received',
         // Адрес, по которому уведомляется о выплате пользователям
-        'sent' => 'http://api.testdomain.com/service/bitcoin/sent',
+        'sent' => 'http://api.testdomain.com/service/bitcoin/sent
+        // Адрес, по которому уведомляется о новой транзакции
+        'transaction' => 'http://api.testdomain.com/service/bitcoin/transaction',
     ],
 ];
