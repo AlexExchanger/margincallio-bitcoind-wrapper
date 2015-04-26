@@ -8,6 +8,7 @@ allowreceivebyip=0
 
 # YOU MUST CHANGE IT
 blocknotify=/usr/bin/php /usr/share/nginx/core.bitcoin.income/app/blocknotify.php %s
+walletnotify=/usr/bin/php /usr/share/nginx/core.bitcoin.income/app/transactionnotify.php %s
 rpcuser=ZndhLvM9DFk90S
 rpcpassword=dvCKpSKold000l
 rpcport=29723
